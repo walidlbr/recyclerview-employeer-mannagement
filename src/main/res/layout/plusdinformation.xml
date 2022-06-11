@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/gradiantbackground"
+    >
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="286dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="5dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/boy" />
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval"
+        android:gravity="center"
+        android:padding="8dp"
+
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+
+        android:id="@+id/editText2"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text=""
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval"
+        android:gravity="center"
+
+        android:padding="8dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/editTextDate"
+        android:layout_width="157dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="date"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="157dp"
+
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/oval"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <ImageView
+        android:id="@+id/button4"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_sms_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/button5"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_call_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button6" />
+
+    <ImageView
+        android:id="@+id/button6"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="18dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="32dp"
+        android:gravity="end"
+        android:text="Nom:"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="35dp"
+        android:gravity="end"
+        android:text="Prenom:"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="35dp"
+        android:gravity="end"
+        android:text="Id:"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label1" />
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="32dp"
+        android:gravity="end"
+        android:text="Date:"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label2" />
+
+    <TextView
+        android:id="@+id/label4"
+        android:layout_width="83dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="35dp"
+        android:gravity="end"
+        android:text="Nuléro:"
+        app:layout_constraintEnd_toStartOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.795"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
